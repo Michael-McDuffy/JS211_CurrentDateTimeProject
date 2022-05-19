@@ -15,15 +15,18 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-const convertNumberToString = (str) => {
+const Num2Str = (str) => {
   console.log(typeof str)
   return Number(str)
 }
-console.log(convertNumberToStrin("5"))
+console.log(Num2Str("5"))
 
 
 // Write a JavaScript program to convert a string to the number.
-
+const convertStringToNumber = (number) => {
+  console.log(typeof number)
+  return String(number)
+}
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -37,19 +40,38 @@ console.log(convertNumberToStrin("5"))
 
   
 // Write a JavaScript program that adds 2 numbers together.
+let  x = 6
+let y = 14
+let z = x + y
+console.log(z)
+let t = true
 
-
+let f = false
 
 // Write a JavaScript program that runs only when 2 things are true.
-
+if (x + y == 20 ) {
+  console.log(t);
+}else {
+  console.log(f)
+}
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-
+if (z < 20) {
+  console.log (f);
+} else if (z == 20) {
+  console.log(t);
+}
 
 
 // Write a JavaScript program that runs when both things are not true.  
-
+if (x + y < 20) {
+ console.log (t);
+} else if (x + y > 20 ) {
+  console.log(t);
+}else {
+  console.log(f);
+}
 // ***************************
 //         PART TWO
 // ***************************
